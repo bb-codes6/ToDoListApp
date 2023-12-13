@@ -117,3 +117,21 @@ ul li span {
 ul li span:hover {
     background: #edeef0;
 }
+
+/* makes website responsive on all screen sizes */
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .content {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .content {
+    width: 100%;
+  }
+}
