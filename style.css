@@ -121,17 +121,14 @@ ul li span:hover {
 /* makes website responsive on all screen sizes */
 @media only screen and (max-width:800px) {
   /* For tablets: */
-  .content {
+  .container {
     width: 80%;
     padding: 0;
-  }
-  .right {
-    width: 100%;
   }
 }
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
-  .content {
+  .container {
     width: 100%;
   }
 }
