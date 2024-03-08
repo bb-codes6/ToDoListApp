@@ -6,16 +6,23 @@ function addTask(){
         alert("You must type something!")
     }
     else {
+        const prioritySelect = document.getElementById("prioritySelect");
+        const priority = prioritySelect.value;
+
         let li = document.createElement("li");
-        li.innerHTML = inputBox.value;
-        listContainer.appendChild(li);
+        li.textContent = inputBox.value + " (" + priority + " priority)";
+        li.classList.add(priority + "-priority");
+
         let span = document.createElement("span");
         span.innerHTML = "\u00d7";
         li.appendChild(span);
 
+        listContainer.appendChild(li);
+
+        inputBox.value = "";
+        saveData();
+
     }
-    inputBox.value = "";
-    saveData();
 
 }
 // adds a checked mark if the user clicks the task and unchecks if user clicks checked circle. Then removes task when user clicks the x
